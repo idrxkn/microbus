@@ -1,0 +1,200 @@
+.us-wrap {
+  font-family: "Druk";
+  font-size: 48px;
+  color: #183d3d;
+  text-align: center;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+body.dark .us-wrap {
+  color: #93b1a6;
+}
+.why {
+  width: 1003px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  font-style: normal;
+  font-weight: 700;
+}
+.us {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 300;
+}
+.us-col {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 90px;
+}
+.us-card {
+  max-width: 330px;
+  max-height: 207px;
+  position: relative;
+}
+.us-block {
+  max-width: 330px;
+  max-height: 217px;
+  margin: 0;
+  padding: 0;
+}
+body.dark .us-block {
+  opacity: 0.4 !important;
+}
+.card-top-img {
+  position: absolute;
+  max-width: 80px;
+  max-height: 80px;
+  top: -4%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  z-index: 100 !important;
+}
+
+/* Dark mode - change color of curve image */
+body.dark .card-top-img {
+  filter: invert(1) sepia(0.01) saturate(1.2) hue-rotate(150deg);
+}
+.card-title {
+  position: absolute;
+  top: 0;
+  /* Опытные водители */
+
+  position: absolute;
+  left: 45px;
+  top: 50px;
+  width: 206px;
+  text-align: left;
+  font-family: "Druk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #183d3d;
+}
+body.dark .card-title {
+  color: #fff;
+}
+.card-text {
+  position: absolute;
+  width: 241px;
+  height: 80px;
+  left: 45px;
+  top: 87px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  color: #183d3d;
+}
+body.dark .card-text {
+  color: #fff;
+}
+.card-text.cm {
+  top: 90px;
+}
+@media (max-width: 768px) {
+  .us-wrap {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .why {
+    max-width: 90%;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  .us-cards {
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .us-col {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .us-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    left: 30px;
+    top: 40px;
+    font-size: 12px;
+  }
+
+  .card-text {
+    width: 80%;
+    left: 30px;
+    top: 80px;
+    font-size: 10px;
+  }
+  .card-text.cm {
+    top: 80px;
+  }
+
+  .card-top-img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .us-wrap {
+    font-size: 28px; /* Slightly larger font for better readability */
+    margin-bottom: 80px; /* Adjust bottom margin */
+  }
+
+  .why {
+    max-width: 80%; /* Adjust width for tablets */
+    font-size: 28px; /* Increase font size */
+  }
+
+  .us-cards {
+    justify-content: center; /* Center all cards */
+    margin: 0 auto; /* Ensure proper alignment */
+    margin-bottom: 70px; /* Add spacing below cards */
+  }
+
+  .us-col {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 40px; /* Adjust spacing between cards */
+    margin-bottom: 60px; /* Space between rows */
+    align-items: center; /* Center-align content */
+  }
+
+  .us-card {
+    max-width: 300px; /* Limit maximum width for consistency */
+  }
+
+  .card-title {
+    left: 20px; /* Adjust position for smaller layouts */
+    top: 40px; /* Adjust spacing */
+    font-size: 14px; /* Increase font size slightly */
+  }
+
+  .card-text {
+    width: 80%; /* Adjust width to fit within the card */
+    left: 20px; /* Adjust positioning */
+    top: 70px; /* Add space below title */
+    font-size: 12px; /* Slightly larger font */
+    line-height: 18px; /* Improve readability */
+  }
+
+  .card-text.cm {
+    top: 90px; /* Adjust position for specific class */
+  }
+  .card-top-img{
+    max-width: 60px;
+    max-height: 60px;
+  }
+}

@@ -1,0 +1,250 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) translateY(50px);
+  }
+}
+
+.popup-content {
+  position: relative;
+  background: #fff;
+  padding: 60px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  font-family: "Druk";
+  animation: appear 0.6s ease forwards;
+  color: #183d3d;
+}
+body.dark .popup-content {
+  background: #93b1a6;
+  color: #183d3d;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.hidden .popup-content {
+  animation: disappear 0.4s ease forwards;
+}
+
+.hidden .popup-overlay {
+  animation: fadeOutOverlay 0.4s ease forwards;
+}
+
+@keyframes fadeOutOverlay {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 78px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-title {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-family: "Noto Sans";
+  font-weight: 200;
+}
+
+.form-group input {
+  width: 100% !important;
+  padding: 15px;
+  height: 60px !important;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+body.dark .form-group input {
+  background-color: #c0d5cd;
+}
+
+.submit-button {
+  background-color: #183d3d;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Druk";
+  transition: 0.2s all ease-in-out;
+}
+
+.popup-content button:hover {
+  background: rgba(101, 201, 176, 0.5);
+  color: #183d3d;
+}
+
+/* Custom styling for the phone input component */
+.react-tel-input .form-control {
+  width: 100%;
+  padding-left: 52px; /* Adjust padding to account for the flag */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 44px;
+}
+
+.react-tel-input .flag-dropdown {
+  background-color: white;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid #ccc;
+  width: 50px;
+}
+
+.react-tel-input .flag-dropdown .selected-flag {
+  padding: 0 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  border: 1px solid #ccc !important;
+  outline: none;
+  padding-left: 60px !important;
+  outline: none !important;
+}
+body.dark .form-control {
+  background-color: #c0d5cd !important;
+}
+.flag-dropdown {
+  background-color: #fff !important;
+}
+body.dark .flag-dropdown {
+  background-color: #9bb4a9 !important;
+}
+
+.error-message h2,
+.success-message h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.error-message p {
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color: #b02424;
+}
+.success-message p {
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color: #348232;
+}
+.close-button-success,
+.close-button-error {
+  background-color: #183d3d;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Druk";
+  transition: 0.2s all ease-in-out;
+}
+body.dark .close-button {
+  color: #93b1a6;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .popup-content {
+    padding: 40px 20px;
+    max-width: 350px;
+    border-radius: 4px;
+  }
+
+  .popup-title {
+    font-size: 1.1rem;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 0.85rem;
+    border: 0.5px solid #ccc;
+  }
+  .form-control {
+    border: 0.5px solid #ccc !important;
+  }
+  .flag-dropdown {
+    border: 0.5px solid #ccc !important;
+  }
+  .submit-button {
+    border-radius: 5px;
+  }
+  .close-button {
+    font-size: 2rem; /* Make close button smaller */
+    top: 5px; /* Adjust position */
+    right: 10px; /* Adjust position */
+  }
+  .success-message h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}

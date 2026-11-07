@@ -1,0 +1,274 @@
+.car-park-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 250px;
+}
+
+.car-park {
+  text-align: center;
+}
+
+.car-park-title {
+  font-family: "Druk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #183d3d;
+  margin-bottom: 10px;
+}
+body.dark .car-park-title {
+  color: #93b1a6;
+}
+.car-park-subtitle {
+  font-family: "Noto Sans";
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 100px;
+  color: #183d3d;
+}
+
+body.dark .car-park-subtitle {
+  color: #93b1a6;
+}
+.car-park-el {
+}
+.car-name {
+  font-family: "Druk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 60px;
+  color: #183d3d;
+  margin-bottom: 40px;
+}
+body.dark .car-name {
+  color: #93b1a6;
+}
+.car-year-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.car-year {
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #183d3d;
+}
+body.dark .car-year {
+  color: #93b1a6;
+}
+hr {
+  background-color: #183d3d;
+  color: #183d3d;
+  width: 266px;
+  height: 1px;
+  border: none;
+}
+body.dark hr {
+  background-color: #93b1a6;
+}
+.car-desc {
+  width: 421px;
+  margin: 0 auto;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #183d3d;
+}
+body.dark .car-desc {
+  color: #93b1a6;
+}
+.car-img {
+  width: 707px;
+  height: 339px;
+}
+.car-img.elantra {
+  width: 440px;
+  height: 320px;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 10px; /* Adjust padding to fit the button content */
+
+  color: #183d3d; /* Optional: Set the icon color */
+  border-radius: 50%; /* Optional: Make the buttons circular */
+}
+body.dark .swiper-button-next,
+body.dark .swiper-button-prev {
+  color: #93b1a6;
+}
+
+/* Swiper Container */
+.swiper {
+  max-width: 1140px; /* Limit the width of the swiper container */
+  margin: 0 auto; /* Center the swiper */
+  overflow: hidden; /* Prevent overflow to avoid showing the next slide */
+}
+
+/* Ensure each slide takes up the entire Swiper container */
+.swiper-slide {
+  width: 100% !important; /* Make sure each slide takes up 100% of the Swiper container's width */
+  display: flex; /* Flexbox to center content within the slide */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remove the previous max-width from swiper-slide */
+.swiper-slide {
+  max-width: none !important; /* Ensure the slide width isn't constrained */
+}
+
+/* Mobile (up to 600px) */
+@media (max-width: 768px) {
+  .car-park-container {
+    margin-bottom: 50px;
+  }
+  .swiper {
+    max-width: 350px;
+  }
+  .car-park-title {
+    font-size: 28px;
+  }
+
+  .car-park-subtitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .swiper-slide {
+    margin-right: 0;
+  }
+
+  .car-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .car-year-container {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .car-year {
+    font-size: 16px;
+  }
+  hr {
+    max-width: 115px;
+    height: 1px;
+    border: none;
+  }
+
+  .car-desc {
+    max-width: 300px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .car-img {
+    max-width: 260px;
+    height: auto;
+  }
+
+  .car-img.elantra {
+    max-width: 200px;
+    height: auto;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 5px; /* Adjust padding to fit the button content */
+    color: #183d3d; /* Optional: Set the icon color */
+    border-radius: 50%; /* Optional: Make the buttons circular */
+    margin-top: 35px;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 28px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .car-park-container {
+    margin-bottom: 100px; /* Adjust bottom margin for better spacing */
+  }
+
+  .swiper {
+    max-width: 800px; /* Limit Swiper container width for tablets */
+    margin: 0 auto; /* Center Swiper */
+  }
+
+  .car-park-title {
+    font-size: 36px; /* Scale title size for tablets */
+    margin-bottom: 20px; /* Add spacing below title */
+  }
+
+  .car-park-subtitle {
+    font-size: 16px; /* Adjust subtitle size */
+    margin-bottom: 50px; /* Add spacing below subtitle */
+  }
+
+  .car-name {
+    font-size: 28px; /* Scale down car name font size */
+    margin-bottom: 20px; /* Adjust spacing below car name */
+  }
+
+  .car-year-container {
+    gap: 20px; /* Reduce gap between elements */
+    margin-bottom: 30px; /* Adjust spacing below year container */
+  }
+
+  .car-year {
+    font-size: 18px; /* Maintain readable font size */
+  }
+
+  hr {
+    max-width: 200px; /* Adjust width for horizontal rule */
+    height: 1px;
+    border: none;
+  }
+
+  .car-desc {
+    max-width: 400px; /* Limit text width */
+    font-size: 14px; /* Adjust font size */
+    margin: 0 auto 30px; /* Center text and add spacing */
+  }
+
+  .car-img {
+    max-width: 600px; /* Scale down image size */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .car-img.elantra {
+    max-width: 400px; /* Adjust size for smaller images */
+    height: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 8px; /* Adjust button padding */
+    color: #183d3d; /* Icon color */
+    border-radius: 50%; /* Circular buttons */
+  }
+
+  body.dark .swiper-button-next,
+  body.dark .swiper-button-prev {
+    color: #93b1a6;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 36px; /* Adjust icon size */
+  }
+}

@@ -1,0 +1,265 @@
+body.dark .greeting-part {
+  color: #93b1a6;
+}
+.greeting-part {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 138px;
+  margin-bottom: 250px;
+}
+.title {
+  font-family: "Druk";
+  font-size: 38px;
+  width: 650px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  color: #183d3d;
+  margin-bottom: 18px;
+}
+body.dark .title {
+  color: #93b1a6;
+}
+.subtitle {
+  max-width: 403px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 34px;
+  color: #183d3d;
+}
+body.dark .subtitle {
+  color: #fff;
+}
+.micro {
+  font-weight: 600;
+
+  color: #24dcdc;
+}
+.discount {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  width: 700px;
+  height: 97px;
+  top: 519px;
+  background-color: #183d3d;
+  color: #fff;
+  border-radius: 0px;
+  transition: 0.3s all;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+}
+body.dark .discount {
+  background-color: #93b1a6;
+  color: #183d3d;
+}
+body.dark .discount:hover {
+  background-color: #80fcdc;
+  color: #183d3d;
+}
+.discount:hover {
+  background-color: #80fcdc;
+  color: #183d3d;
+}
+.discount-text {
+  font-family: "Druk";
+  font-size: 18px;
+  margin-right: 15px;
+}
+.percent {
+  font-family: "Druk";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 15px;
+  margin-top: -5px;
+}
+
+/* Responsive for large tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .greeting-part {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 32px;
+    max-width: 600px;
+    line-height: 44px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .discount {
+    width: 600px;
+    top: 470px;
+  }
+
+  .bus-model {
+    width: 320px !important;
+    height: 320px !important;
+  }
+}
+
+/* Responsive for tablets (768px) */
+@media (max-width: 768px) {
+  .greeting-part {
+    margin-top: 80px;
+    margin-bottom: 200px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .discount {
+    width: 500px;
+    top: 450px;
+  }
+}
+
+/* Responsive for mobile (max-width: 480px) */
+@media (max-width: 768px) {
+  .greeting-part {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 200px;
+  }
+  .greeting-left {
+    height: 125px;
+  }
+
+  .title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    width: 305px;
+    line-height: 23px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    max-width: 280px;
+    margin-bottom: 15px;
+    width: 229px;
+    height: 48px;
+    line-height: 16px;
+    text-align: center;
+    color: #183d3d;
+  }
+
+  .discount {
+    max-width: 297px;
+    max-height: 55px;
+    top: 629px;
+  }
+  .discount-text {
+    font-family: "Druk";
+    font-size: 8.5px;
+    margin-right: 10px;
+  }
+  .discount-text.second {
+    margin-right: 15px;
+  }
+  body.lang-kk .discount-text {
+    font-size: 7.5px;
+  }
+  .percent {
+    font-family: "Druk";
+    font-size: 18px;
+    margin-right: 10px;
+
+    margin-top: -5px;
+  }
+  .bus-model {
+    width: 280px !important;
+    height: 280px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .greeting-part {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    text-align: center;
+  }
+
+  .greeting-left {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 42px;
+    max-width: 600px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  .dynamic-text {
+    display: block; /* Ensure it doesn't overflow */
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 450px;
+    margin: 0 auto 20px;
+  }
+
+  .discount {
+    width: 600px;
+    height: 90px;
+    top: auto;
+    left: 0;
+    position: relative;
+    margin: 20px auto;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .discount-text {
+    font-size: 16px;
+  }
+
+  .percent {
+    font-size: 28px;
+  }
+  .bus-model {
+    width: 400px !important;
+    height: 400px !important;
+    margin: 20px auto;
+  }
+
+  .canvas {
+    pointer-events: none; /* Ensures no interaction with the 3D scene */
+  }
+  .map-plane {
+    width: 450px;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}

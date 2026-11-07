@@ -1,0 +1,134 @@
+.questions-wrap {
+  font-family: "Druk";
+  font-size: 48px;
+  color: #183d3d;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.ask-question {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.ask-question-title {
+  width: 450px;
+  font-family: "Druk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 61px;
+  text-align: center;
+  color: #183d3d;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+body.dark .ask-question-title {
+  color: #93b1a6;
+}
+.ask-btn-a {
+  margin: 0 auto;
+}
+.ask-question-btn {
+  width: 360px;
+  height: 94.49px;
+  background: #183d3d;
+  color: #fff;
+  font-family: "Druk";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.2s background-color ease-in-out;
+  border: none;
+}
+.ask-question-btn:hover {
+  background: rgba(128, 252, 220, 0.5);
+  color: #183d3d;
+}
+body.dark .ask-question-btn {
+  background-color: #93b1a6;
+  color: #183d3d;
+}
+body.dark .ask-question-btn:hover {
+  background-color: #80fcdc;
+  color: #183d3d;
+}
+
+.dontbeshy {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  margin: 0 auto;
+  color: #183d3d;
+}
+body.dark .dontbeshy {
+  color: #93b1a6;
+}
+body.lang-ru .curve.third {
+  width: 194.21px;
+  height: 194.64px;
+  background: url("../../assets/curve_third.png");
+}
+body.lang-en .curve.third {
+  width: 195.03px;
+  height: 194.99px;
+  background: url("../../assets/curve_third_eng.png");
+}
+body.lang-kk .curve.third {
+  width: 195.01px;
+  height: 194.95px;
+  background: url("../../assets/curve_third_kk.png");
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .questions-wrap {
+    margin-bottom: 100px;
+  }
+
+  .ask-question-title {
+    width: 100%;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+
+  .ask-question-btn {
+    width: 300px;
+    height: 80px;
+    font-size: 18px;
+  }
+
+  .dontbeshy {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .questions-wrap {
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+
+  .ask-question-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .ask-question-btn {
+    width: 250px;
+    height: 70px;
+    font-size: 16px;
+  }
+}

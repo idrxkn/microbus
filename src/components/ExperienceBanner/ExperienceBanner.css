@@ -1,0 +1,211 @@
+.experience-wrap {
+  font-family: "Druk";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  color: #183d3d;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+body.dark .experience-wrap {
+  color: #93b1a6;
+}
+.experience-top {
+  display: flex;
+}
+body.lang-kk .experience-top {
+  justify-content: center;
+  margin-right: 80px;
+}
+body.lang-en .experience-top {
+  text-align: center;
+  justify-content: center;
+  margin-right: 55px;
+}
+.experience-second {
+  text-align: right;
+  margin-left: 35px;
+}
+
+body.lang-kk .experience-second {
+  text-align: left;
+  margin-left: 0;
+}
+body.lang-kk .experience-third,
+body.lang-en .experience-third {
+  font-size: 36px;
+}
+body.lang-ru .experience-third {
+  font-size: 48px;
+}
+
+.fifteen {
+  width: 300.09px;
+  height: 200.86px;
+  position: relative;
+  margin-top: -130px;
+  animation: float 5s ease-in infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Adjust the height as needed */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.curve {
+  width: 208px;
+  height: 203.87px;
+  opacity: 1 !important;
+  background-size: cover !important;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  animation: rotate 30s linear infinite;
+}
+body.lang-kk .curve.first {
+  width: 194.71px;
+  height: 194.63px;
+  background: url("../../assets/curve_first_kk.png");
+}
+body.lang-ru .curve.first {
+  background: url("../../assets/curve_first.png");
+}
+body.lang-en .curve.first {
+  width: 195.03px;
+  height: 194.99px;
+  background: url("../../assets/curve_first_eng.png");
+}
+
+.curve svg path {
+  fill: #93b1a6;
+}
+
+/* Dark mode - change color of curve image */
+body.dark .curve {
+  filter: invert(1) sepia(0.01) saturate(1.2) hue-rotate(150deg);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .curve {
+    width: 180px;
+    height: 180px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
+
+/* Responsive for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .experience-wrap {
+    font-size: 16px;
+    max-width: 349px;
+    margin: 0 auto;
+  }
+  .experience-top {
+    margin: 0 auto;
+  }
+  body.lang-en .experience-top {
+    text-align: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  body.lang-kk .experience-top {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  body.lang-kk .experience-second {
+    margin-left: 5px;
+  }
+  .experience-second {
+    text-align: right;
+    margin-left: 5px;
+  }
+  body.lang-kk .experience-third,
+  body.lang-en .experience-third {
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  body.lang-ru .experience-third {
+    margin: 0 auto;
+    font-size: 12.5px;
+  }
+  .fifteen {
+    max-width: 77.52px;
+    max-height: 52.01px;
+    position: relative;
+    margin-top: -30px;
+    animation: float 5s ease-in infinite;
+  }
+  .curve {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    background-size: cover !important;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .experience-wrap {
+    font-size: 28px;
+    max-width: 616px;
+    margin: 0 auto;
+  }
+  .experience-top {
+    margin: 0 auto;
+  }
+  body.lang-en .experience-top {
+    text-align: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  body.lang-kk .experience-top {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  body.lang-kk .experience-second {
+    margin-left: 5px;
+  }
+  .experience-second {
+    text-align: right;
+    margin-left: 5px;
+  }
+  body.lang-kk .experience-third,
+  body.lang-en .experience-third {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  body.lang-ru .experience-third {
+    margin: 0 auto;
+    font-size: 26px;
+  }
+  .fifteen {
+    max-width: 118px;
+    max-height: 83.84px;
+    position: relative;
+    margin-top: -50px;
+    animation: float 5s ease-in infinite;
+  }
+}

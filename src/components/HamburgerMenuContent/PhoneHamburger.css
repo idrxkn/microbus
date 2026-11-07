@@ -1,0 +1,73 @@
+.phone-hamburger {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+.phone-hamburger:hover {
+  opacity: 0.7;
+}
+.number {
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 6px;
+  color: #183d3d;
+}
+body.dark .number {
+  color: #fff;
+}
+.phone-icon {
+  width: 36px;
+  height: 36px;
+  background: url("../../assets/phone_icon.png");
+  background-size: cover;
+}
+body.dark .phone-icon {
+  background: url("../../../assets/phone_icon_white.svg");
+}
+
+@media (max-width: 768px) {
+  .phone-hamburger {
+    width: 135px;
+    gap: 4px;
+    margin-top: 0;
+    margin-left: -10px;
+  }
+  .number {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 2px;
+    color: #183d3d;
+  }
+  .phone-icon {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .phone-hamburger {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .phone-hamburger .phone-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .phone-hamburger .number {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

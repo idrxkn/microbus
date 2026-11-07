@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "keywords": "minibus rental Astana, bus rental Astana, passenger transportation Astana, Astana transport services, private bus hire Astana, rent a minibus Astana, shuttle service Astana, group transportation Astana, corporate bus rental Astana, affordable passenger transport Astana"
+  },
+  "nav": {
+    "aboutUs": "Our company",
+    "price": "Price",
+    "partners": "Our partners",
+    "contacts": "Contacts",
+    "request": "Leave a request"
+  },
+  "greeting": {
+    "staticPart": "THE BEST PARTNER",
+    "dynamic1": "FOR YOUR TRIP.",
+    "dynamic2": "FOR YOUR COMPANY.",
+    "dynamic3": "FOR YOUR COMFORT.",
+
+    "choose": "Discover the city with comfort and reliability - every trip is gonna be special!",
+    "discountFirst": "FOR THE FIRST ORDER",
+    "discountSecond": "IS OFF"
+  },
+  "experience": {
+    "first": "OVER",
+    "second": "YEARS IN THE",
+    "third": "PASSENGER TRANSPORTATION MARKET"
+  },
+
+  "us": {
+    "why": "WHY SHOULD YOU CHOOSE",
+    "us": "US?",
+    "card1": {
+      "title": "Convenient Payment Options",
+      "text": "We accept all payment methods – cash, non-cash, and offer invoicing for corporate clients. We handle all paperwork."
+    },
+    "card2": {
+      "title": "Experienced Drivers",
+      "text": "Our drivers are professionals with years of experience and top qualifications. They know the routes well and ensure safe and comfortable trips."
+    },
+    "card3": {
+      "title": "Video Surveillance System",
+      "text": "All our buses are equipped with cameras, providing full control over the journey. You can monitor the route in real-time."
+    },
+    "card4": {
+      "title": "Comfortable Climate",
+      "text": "Every bus is equipped with modern air conditioners to maintain an ideal climate throughout the trip."
+    },
+    "card5": {
+      "title": "GPS Tracking",
+      "text": "All buses are equipped with GPS systems, allowing real-time tracking of the route."
+    },
+    "card6": {
+      "title": "Custom Routes",
+      "text": "We are ready to create a route tailored to your needs, ensuring the most convenient and efficient transportation."
+    },
+    "card7": {
+      "title": "New and Reliable Buses",
+      "text": "Our fleet consists of modern and new buses, which are regularly maintained. Your comfort and safety are our priority."
+    }
+  },
+  "bus360": {
+    "swing360": "IMMERSE YOURSELF INTO THE BUS 360°",
+    "try": "TRY IT"
+  },
+  "routes": {
+    "city": {
+      "title": "CITY ROUTES",
+      "description": "Our specialists independently plan routes and are fully responsible for their organization and administration. We know the city like the back of our hand, which allows us to offer the most optimal paths, minimizing travel time and ensuring passenger comfort.",
+      "bottomText": "Over the years, we have successfully developed and completed more than {{count}} city routes."
+    },
+    "intercity": {
+      "title": "INTERCITY TRIPS",
+      "description": "We easily organize intercity trips of any complexity. Want to relax in Borovoye, departing from Astana? We'll make your journey comfortable and safe. Our buses are perfectly suited for long trips, providing reliable and convenient transportation for any distance.",
+      "bottomText": "No matter where you're heading, we always offer the optimal solution for your route."
+    },
+    "apply": "LEAVE A REQUEST"
+  },
+  "partners": {
+    "title": "OUR PARTNERS AND TRUSTED CLIENTS"
+  },
+  "questions": {
+    "title": "HAVE ANY QUESTIONS?",
+    "button": "ASK HERE",
+    "shyText": "don't be shy :)"
+  },
+  "price": {
+    "title": "PRICE LIST",
+    "bookButton": "BOOK NOW",
+    "premium": {
+      "label": "Premium",
+      "oldPrice": "from 25,000 ₸",
+      "newPrice": "from 15,000 ₸",
+      "details": {
+        "bus1": "TOYOTA COASTER",
+        "bus2": "HYUNDAI COUNTY",
+        "years": "2023, 2024",
+        "feature1": "Built-in cameras for passenger safety",
+        "feature2": "Ergonomic leather seats with adjustable recline",
+        "feature3": "Free high-speed Wi-Fi for all passengers",
+        "feature4": "Individual USB ports for charging gadgets",
+        "feature5": "Adjustable cabin lighting",
+        "feature6": "Enhanced soundproofing for a comfortable ride"
+      }
+    },
+    "comfort": {
+      "label": "Comfort",
+      "newPrice": "from 12,000 ₸",
+      "details": {
+        "bus1": "TOYOTA COASTER",
+        "bus2": "HYUNDAI COUNTY",
+        "years": "2014, 2015",
+        "feature1": "Standard request processing",
+        "feature2": "Comfortable fabric seats",
+        "feature3": "Standard air conditioning system",
+        "feature4": "Regular USB ports for charging gadgets",
+        "feature5": "Standard cabin lighting",
+        "feature6": "Standard soundproofing"
+      }
+    },
+    "economy": {
+      "label": "Economy",
+      "newPrice": "from 10,000 ₸",
+      "details": {
+        "basicModels": "MODELS WITH BASIC AMENITIES",
+        "feature1": "Fabric seats with minimal adjustment",
+        "feature2": "Regular air conditioners for cooling",
+        "feature3": "Basic services and support",
+        "feature4": "Multiple shared charging ports",
+        "feature5": "Basic services and support"
+      }
+    }
+  },
+
+  "footer": {
+    "logoAlt": "Microbus Logo",
+    "addressLine1": "Eurocenter Business Center, 5th Floor, Office 525",
+    "addressLine2": "47 Syganak Street, Astana 010000",
+    "phone": "+7 (706) 666 0201",
+    "whatsapp": "Message on WhatsApp",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "privacyPolicy": "Privacy Policy",
+    "offerAgreement": "Offer Agreement",
+    "scrollAlt": "Scroll to top",
+    "copyright": "© 2024 МИКРОБУС LLP",
+    "rightsReserved": "All rights reserved."
+  },
+  "carPark": {
+    "title": "CAR PARK",
+    "subtitle": "12+ of our own minibuses with 28 seats",
+    "yearSuffix": "year"
+  },
+  "carDescription": {
+    "coaster": "One of the best. Ergonomic interior, modern safety systems, and economical engine.",
+    "county": "A practical minibus. Spacious interior, efficient air conditioning, and advanced safety systems.",
+    "elantra2019": "A stylish and modern sedan with elegant design, comfortable interior, and advanced technology, perfect for city driving."
+  },
+  "driverVacancy": {
+    "title": "WE ARE LOOKING FOR DRIVERS",
+    "subtitle": "If you have the appropriate driving categories and years of driving experience, we would be happy to welcome you to our team. Fill out the form, and we will contact you shortly.",
+    "name": "Name",
+    "phone": "Phone number",
+    "ownBus": "Do you have your own bus?",
+    "yes": "Yes",
+    "no": "No",
+    "drivingCategory": "Max. driving category",
+    "experience": "Driving experience (years)",
+    "submit": "SUBMIT"
+  },
+  "popup": {
+    "title": "LEAVE A REQUEST FOR A CONSULTATION",
+    "name": "Name",
+    "tel": "Phone number",
+    "submit": "SUBMIT",
+    "successTitle": "SUCCESSFULLY SENT!",
+    "successMessage": "Thank you for reaching out. We will get back to you soon.",
+    "errorTitle": "OOPS! SOMETHING WENT WRONG.",
+    "errorMessage": "There was an issue sending your request. Please try again later.",
+    "close": "CLOSE"
+  }
+}
